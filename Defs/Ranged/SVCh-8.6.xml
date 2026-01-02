@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>TA_SVCh86br</defName>
+		<label>SVCh-8.6 battle rifle</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Ranged/TA_SVCh-8.6</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.20,1.20)</drawSize>
+		</graphicData>
+		<modExtensions>			
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.25,0.05</DrawOffset>
+			</li>
+		</modExtensions>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<ShotSpread>0.06</ShotSpread>
+			<SwayFactor>1.86</SwayFactor>
+			<Bulk>9.2</Bulk>
+			<Mass>6.75</Mass>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Chemfuel>10</Chemfuel>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>2.67</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>65</range>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>16</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_338Lapua</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>CE_AI_SR</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>TA_LG-fiveGL</defName>
+		<label>Norinco LG-5 sniper grenade laincher</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Ranged/TA_QLU-11</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.32,1.32)</drawSize>
+		</graphicData>
+		<modExtensions>			
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.28,0.0</DrawOffset>
+			</li>
+		</modExtensions>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>37500</WorkToMake>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>1.83</SwayFactor>
+			<Bulk>13.25</Bulk>
+			<Mass>12.9</Mass>
+			<RangedWeapon_Cooldown>0.61</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Chemfuel>15</Chemfuel>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>5.34</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_40x53mmGrenade_HEDP</defaultProjectile>
+				<warmupTime>2.8</warmupTime>
+				<range>86</range>
+				<minRange>5</minRange>
+				<soundCast>Shot_GL</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>4</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_40x53mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>Bipod_AMR</li>
+			<li>GunHeavy</li>
+			<li>GunGrenadeLauncher</li>
+			<li>GrenadeEMP</li>
+			<li>CE_AI_SMOKE</li>
+			<li>CE_AI_AOE</li>	  
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

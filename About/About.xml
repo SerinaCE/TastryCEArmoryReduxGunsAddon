@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Tasty CE Armory Redux Guns Addon</name>
+	<author>al9000</author>
+	<url></url>
+	<description>[CE_Core/weapons + CE_Guns + CE_Armory].zip</description>	
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>al9000.TastyCEArmoryReduxGunsAddon</packageId>
+	<modDependencies>
+		<li>
+			<packageId>al9000.TastyCEArmoryRedux</packageId>
+			<displayName>Tasty CE Armory Redux</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>CETeam.CombatExtended</li>
+		<li>al9000.TastyCEArmoryRedux</li>
+	</loadAfter>
+</ModMetaData>
