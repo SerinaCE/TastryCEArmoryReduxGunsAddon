@@ -52,8 +52,8 @@
 		<defName>TA_Turret_BKS338MG</defName>
 		<label>BKS-338 MMG</label>
 		<graphicData>
-			<texPath>Building/Security/TA_UKM-2000_base</texPath>
-			<drawSize>(2,2)</drawSize>
+			<texPath>Building/Security/TA_Tripod</texPath>
+			<drawSize>(1.1,1.1)</drawSize>
 			<shadowData>
 				<volume>(0.27,0.25,0.43)</volume>
 				<offset>(0,0,0)</offset>

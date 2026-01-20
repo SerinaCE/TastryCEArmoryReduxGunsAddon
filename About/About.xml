@@ -8,12 +8,6 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<packageId>al9000.TastyCEArmoryReduxGunsAddon</packageId>
-	<modDependencies>
-		<li>
-			<packageId>al9000.TastyCEArmoryRedux</packageId>
-			<displayName>Tasty CE Armory Redux</displayName>
-		</li>
-	</modDependencies>
 	<loadAfter>
 		<li>CETeam.CombatExtended</li>
 		<li>al9000.TastyCEArmoryRedux</li>
